@@ -7,11 +7,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="chat.js"></script>
 </head>
+<style type="text/css">
+	body{
+/*		background-image: url('file:///C:/Users/LENOVO/Downloads/cron%C3%B3metro/Nature%20Wallpapers%20Marvelous%20Wallpapers%20Sunset%20Desktop%20Wallpaper.jpg');*/
+		background-image: url('https://4.bp.blogspot.com/-RAqOsmgyX_M/XjA9AE0xOrI/AAAAAAABFFE/Lw5Nc9scLM8m32N7_gh4dRzxN-eDQL0OgCLcBGAsYHQ/s1600/wallpc%2B%25287%2529.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		overflow-y: hidden;
+	   	background-position: center;
+	    height: 100vh;
+	}	
+	#chat-container{
+		height: 570px;
+	    width: 30%;
+	    margin: 20px auto;
+	    border-radius: 15px;
+	    padding: 15px;
+	    background-color: rgba(157, 232, 255, 0.3);
+	    box-shadow: 10px 8px 3px rgba(0, 0, 0, 0.3);
+	    outline: solid thin #ae9f2d;
+	}
+    h1, .caixaEntrada{
+		text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+	}
+	#chat-messages{
+    	margin-top: 15px;
+	}
+    .caixaEntrada{
+        margin-top: 15px;
+    }
+</style>
 <body>
     <div id="chat-container">
+        <h1>ChatLab</h1>
         <div id="chat-messages"></div>
-        <input type="text" id="message-input" placeholder="Digite uma mensagem..." autofocus>
-        <button onclick="commitMessageClickHandler()" id="message-commit">Adicionar mensagem</button>
+        <div class="caixaEntrada">
+            <input type="text" id="message-input" placeholder="Digite uma mensagem..." autofocus>
+            <button id="message-commit" onclick="commitMessageClickHandler()">Adicionar mensagem</button>
+        </div>
     </div>
 </body>
 </html>
